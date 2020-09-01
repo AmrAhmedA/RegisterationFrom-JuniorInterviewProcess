@@ -23,33 +23,38 @@ class NavBar extends Component {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item active">
-              <a className="nav-link" href="/#">
+              <a className="nav-link" href="/Register">
                 Home <span className="sr-only">(current)</span>
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/#">
+              <a className="nav-link" href="/Register">
                 Education
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/#">
+              <a className="nav-link" href="/Register">
                 Research
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/#">
+              <a className="nav-link" href="/Register">
                 Innovation
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/Login">
+                Login
               </a>
             </li>
             <li className="nav-item">
               <a
                 className="nav-link disabled"
-                href="/#"
+                href="/Register"
                 tabIndex="-1"
                 aria-disabled="true"
               >
-                Login
+                Register
               </a>
             </li>
           </ul>

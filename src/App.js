@@ -2,11 +2,12 @@ import React from 'react';
 import './App.css';
 import NavBar from "./components/navBar"
 import 'bootstrap/dist/css/bootstrap.css';
-// import LoginForm from "./components/loginForm"
+import LoginForm from "./components/loginForm"
 import HeadImage from "./components/headImage"
 import StickySocialMedia from "./components/stickySocialMedia"
 import Credits from "./components/credits"
 import RegisterForm from "./components/registerForm"
+import { Route, Switch } from 'react-router-dom'
 function App() {
   // const warningTitleCSS =
   //   "color:red; font-size:50px; font-weight: bold; -webkit-text-stroke: 1px black;";
@@ -15,7 +16,12 @@ function App() {
       <StickySocialMedia />
       <NavBar />
       <HeadImage />
-      <RegisterForm />
+      <div className="content">
+        <Switch >
+          <Route path="/Register" component={RegisterForm} />
+          <Route path="/Login" component={LoginForm} />
+        </Switch>
+      </div>
       <Credits />
       {/* {setTimeout(
         console.log.bind(console, "%c#Amr Gewaly 🔥🔥😄🔥🔥 ", warningTitleCSS),
