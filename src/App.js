@@ -7,6 +7,8 @@ import HeadImage from "./components/headImage"
 import StickySocialMedia from "./components/stickySocialMedia"
 import Credits from "./components/credits"
 function App() {
+  // const warningTitleCSS =
+  //   "color:red; font-size:50px; font-weight: bold; -webkit-text-stroke: 1px black;";
   return (
     <div>
       <StickySocialMedia />
@@ -14,7 +16,10 @@ function App() {
       <HeadImage />
       <LoginForm />
       <Credits />
-      {console.log("The app is working fine ;)")}
+      {/* {setTimeout(
+        console.log.bind(console, "%cThe app is working fine - Amr Gewaly 😄", warningTitleCSS),
+        0
+      )} */}
     </div>
 
   );
