@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Logo from "../images/British_University_in_Egypt.png";
 // Dummy NavBar
 class NavBar extends Component {
   state = {};
@@ -6,7 +7,7 @@ class NavBar extends Component {
     return (
       <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-light">
         <a className="navbar-brand" href="/#">
-          BUE
+          <img src={Logo} width="120" alt="BUE LOGO"></img>
         </a>
         <button
           className="navbar-toggler"
