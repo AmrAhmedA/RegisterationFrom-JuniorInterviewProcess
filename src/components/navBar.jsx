@@ -4,7 +4,7 @@ class NavBar extends Component {
   state = {};
   render() {
     return (
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-light">
         <a className="navbar-brand" href="/#">
           BUE
         </a>
@@ -28,12 +28,17 @@ class NavBar extends Component {
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/#">
-                Features
+                Education
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/#">
-                Pricing
+                Research
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/#">
+                Innovation
               </a>
             </li>
             <li className="nav-item">
@@ -43,7 +48,7 @@ class NavBar extends Component {
                 tabIndex="-1"
                 aria-disabled="true"
               >
-                Disabled
+                Login
               </a>
             </li>
           </ul>
