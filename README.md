@@ -2,7 +2,7 @@
 This project is an attempt to fullfil a junior interview process at the production unit in the British Univesity in Egypt
 
 # How to use
-* Download the repo and clone it 
+* First, clone the repo  
 ```
 $ git clone https://github.com/AmrAhmedA/RegisterationFrom-JuniorInterviewProcess.git
 ``` 
