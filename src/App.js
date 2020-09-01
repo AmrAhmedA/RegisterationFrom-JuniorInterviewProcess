@@ -2,10 +2,11 @@ import React from 'react';
 import './App.css';
 import NavBar from "./components/navBar"
 import 'bootstrap/dist/css/bootstrap.css';
-import LoginForm from "./components/loginForm"
+// import LoginForm from "./components/loginForm"
 import HeadImage from "./components/headImage"
 import StickySocialMedia from "./components/stickySocialMedia"
 import Credits from "./components/credits"
+import RegisterForm from "./components/registerForm"
 function App() {
   // const warningTitleCSS =
   //   "color:red; font-size:50px; font-weight: bold; -webkit-text-stroke: 1px black;";
@@ -14,10 +15,10 @@ function App() {
       <StickySocialMedia />
       <NavBar />
       <HeadImage />
-      <LoginForm />
+      <RegisterForm />
       <Credits />
       {/* {setTimeout(
-        console.log.bind(console, "%cThe app is working fine - Amr Gewaly 😄", warningTitleCSS),
+        console.log.bind(console, "%c#Amr Gewaly 🔥🔥😄🔥🔥 ", warningTitleCSS),
         0
       )} */}
     </div>

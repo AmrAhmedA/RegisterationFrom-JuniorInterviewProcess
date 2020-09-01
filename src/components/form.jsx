@@ -58,6 +58,30 @@ class Form extends Component {
       />
     );
   }
+  renderDropDown(props) {
+    return (
+      <div>
+        <label htmlFor="userGender">Gender</label>
+        <select className="form-control" id="candidatesSelect">
+          <option value="1">None</option>
+          <option value="2">Male</option>
+          <option value="3">Female</option>
+        </select>
+      </div>
+    );
+  }
+  renderFileInput() {
+    return (
+      <div className="form-group">
+        <label htmlFor="exampleFormControlFile1">ID or Passport</label>
+        <input
+          type="file"
+          className="form-control-file"
+          id="exampleFormControlFile1"
+        />
+      </div>
+    );
+  }
 }
 
 export default Form;
