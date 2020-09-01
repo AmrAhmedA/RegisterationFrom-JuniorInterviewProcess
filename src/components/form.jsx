@@ -40,7 +40,7 @@ class Form extends Component {
   };
   renderButton(label) {
     return (
-      <button disabled={this.validate()} className="btn btn-primary">
+      <button disabled={this.validate()} className="btn btn-primary btn-lg">
         {label}
       </button>
     );
@@ -60,9 +60,9 @@ class Form extends Component {
   }
   renderDropDown(props) {
     return (
-      <div>
+      <div className="form-group">
         <label htmlFor="userGender">Gender</label>
-        <select className="form-control" id="candidatesSelect">
+        <select className="form-control" id="inputState">
           <option value="1">None</option>
           <option value="2">Male</option>
           <option value="3">Female</option>

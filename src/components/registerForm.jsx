@@ -22,20 +22,30 @@ class RegisterForm extends Form {
   render() {
     return (
       <div className="container">
-        <div className="row ">
-          <div className="col-md-6" style={{ float: "none", margin: "auto" }}>
-            <form onSubmit={this.handleSubmit}>
-              {this.renderInput("firstname", "Firstname")}
-              {this.renderInput("secondname", "Secondname")}
-              {this.renderInput("email", "Email")}
-              {this.renderInput("phone", "Phone")}
-              {this.renderInput("password", "Password", "password")}
-              {this.renderDropDown()}
-              {this.renderFileInput()}
+        <form onSubmit={this.handleSubmit}>
+          <div className="form-row">
+            <div className="form-group col-sm-4">
+              {this.renderInput("firstname", "Firstname*")}
+            </div>
+            <div className=" form-group col-sm-4">
+              {this.renderInput("secondname", "Secondname*")}
+            </div>
+            <div className="form-group col-sm-4">
+              {this.renderInput("email", "Email*")}
+            </div>
+            <div className="form-group col-sm-4">
+              {this.renderInput("phone", "Phone*")}
+            </div>
+            <div className="form-group col-sm-4">
+              {this.renderInput("password", "Password*", "password")}
+            </div>
+            <div className="form-group col-sm-4">{this.renderDropDown()}</div>
+            <div className="form-group col-sm-4">{this.renderFileInput()}</div>
+            <div className="col-xs" align="center">
               {this.renderButton("Register")}
-            </form>
+            </div>
           </div>
-        </div>
+        </form>
       </div>
     );
   }
