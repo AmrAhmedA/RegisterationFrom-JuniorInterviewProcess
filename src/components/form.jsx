@@ -60,12 +60,16 @@ class Form extends Component {
   }
   renderDropDown(props) {
     return (
-      <div className="form-group">
-        <label htmlFor="userGender">Gender</label>
-        <select className="form-control" id="inputState">
-          <option value="1">None</option>
-          <option value="2">Male</option>
-          <option value="3">Female</option>
+      <div className="input-group mb-3">
+        <div className="input-group-prepend">
+          <label className="input-group-text" forhtml="inputGroupSelect01">
+            Gender
+          </label>
+        </div>
+        <select className="custom-select" id="inputGroupSelect01">
+          <option defaultValue>None...</option>
+          <option value="1">Male</option>
+          <option value="2">Female</option>
         </select>
       </div>
     );
