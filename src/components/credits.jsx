@@ -10,7 +10,6 @@ class Credits extends Component {
             &copy; Amr Ahmed Abd El Rahman{" "}
           </h5>
         </a>
-        {console.log("The app is working fine ;)")}
       </div>
     );
   }

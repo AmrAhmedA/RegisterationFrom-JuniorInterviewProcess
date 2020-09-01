@@ -14,6 +14,7 @@ function App() {
       <HeadImage />
       <LoginForm />
       <Credits />
+      {console.log("The app is working fine ;)")}
     </div>
 
   );
