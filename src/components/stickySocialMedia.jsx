@@ -5,17 +5,14 @@ class StickySocialMedia extends Component {
   state = {};
   render() {
     return (
-      <div class="icon-bar">
-        <a
-          href="https://www.facebook.com/britishuniversityegypt/"
-          className="facebook"
-        >
+      <div className="icon-bar">
+        <a href="https://www.facebook.com/amrahmedgewaly/" className="facebook">
           <i className="fa fa-facebook"></i>
         </a>
-        <a href="#" className="twitter">
+        <a href="/#" className="twitter">
           <i className="fa fa-twitter"></i>
         </a>
-        <a href="#" className="google">
+        <a href="/#" className="google">
           <i className="fa fa-google"></i>
         </a>
         <a
