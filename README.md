@@ -1,5 +1,5 @@
 # About
-This project is an attempt to fullfil a junior interview process at the production unit in the British Univesity in Egypt
+This project is an attempt to fulfill a junior interview process at the production unit in the British Univesity in Egypt
 
 # How to use
 * First, clone the repo  
