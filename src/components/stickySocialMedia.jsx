@@ -21,7 +21,10 @@ class StickySocialMedia extends Component {
         >
           <i className="fa fa-linkedin"></i>
         </a>
-        <a href="https://github.com/AmrAhmedA/Seecured" className="github">
+        <a
+          href="https://github.com/AmrAhmedA/RegisterationFrom-JuniorInterviewProcess"
+          className="github"
+        >
           <i className="fa fa-github"></i>
         </a>
       </div>

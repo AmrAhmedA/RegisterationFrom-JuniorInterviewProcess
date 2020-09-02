@@ -2,6 +2,7 @@ import React from "react";
 import Joi from "joi-browser"; // Special library for form vlaidation
 import Form from "../components/form";
 import { login } from "../components/services/authService";
+// import axios from "axios";
 class LoginForm extends Form {
   // username = React.createRef();
   state = {
@@ -10,15 +11,18 @@ class LoginForm extends Form {
   };
 
   schema = {
-    email: Joi.string().required().label("Email"),
-    password: Joi.string().required().label("Password"),
+    email: Joi.string().required().email().label("Email"),
+    password: Joi.string().required().min(5).max(30).label("Password"),
   };
 
   doSubmit = async () => {
     // Call server
     try {
       const { data } = this.state;
-      login(data.email, data.password);
+      login(data.email, data.password); // Send the login credentials to the API
+      // const promise = axios.get("https://jsonplaceholder.typicode.com/posts");
+      // const response = await promise;
+      // console.log(response);
     } catch (ex) {
       if (ex.response && ex.response.status === 400) {
         const errors = { ...this.state.errors };

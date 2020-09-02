@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import Logo from "../images/British_University_in_Egypt.png";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 // Dummy NavBar
 class NavBar extends Component {
-  HeaderView() {
-    let location = useLocation();
-    console.log(location.pathname);
-    // return <span>Path : {location.pathname}</span>;
-  }
+  // HeaderView() {
+  //   const { pathname } = this.props.useLocation;
+  //   console.log(pathname.pathname);
+  //   // return <span>Path : {location.pathname}</span>;
+  // }
 
   state = {};
   render() {

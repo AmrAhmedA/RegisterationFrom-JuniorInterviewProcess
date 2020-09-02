@@ -19,6 +19,7 @@ class RegisterForm extends Form {
     // Call Server
     try {
       await userService.register(this.state.data);
+      this.props.history.push("/Login"); // Programmatic Routing
     } catch (ex) {
       if (ex.response && ex.response.status === 400) {
         const errors = { ...this.state.errors };
@@ -26,8 +27,6 @@ class RegisterForm extends Form {
         this.setState({ errors });
       }
     }
-
-    this.props.history.push("/Login"); // Programmatic Routing
 
     console.log("Submitted");
   };
