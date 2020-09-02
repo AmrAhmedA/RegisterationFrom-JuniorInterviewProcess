@@ -13,8 +13,8 @@ import Education from "./components/education"
 import Innovation from "./components/innovation"
 import { Route, Switch, Redirect } from 'react-router-dom'
 function App() {
-  // const warningTitleCSS =
-  //   "color:red; font-size:50px; font-weight: bold; -webkit-text-stroke: 1px black;";
+  const warningTitleCSS =
+    "color:red; font-size:50px; font-weight: bold; -webkit-text-stroke: 1px black;";
   return (
     <div>
       <StickySocialMedia />
@@ -33,10 +33,10 @@ function App() {
         </Switch>
       </div>
       <Credits />
-      {/* {setTimeout(
+      {setTimeout(
         console.log.bind(console, "%c#Amr Ahmed", warningTitleCSS),
         0
-      )} */}
+      )}
     </div>
 
   );

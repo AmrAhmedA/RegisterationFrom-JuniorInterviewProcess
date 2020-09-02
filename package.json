@@ -9,17 +9,20 @@
     "axios": "^0.20.0",
     "bootstrap": "^4.5.2",
     "font-awesome": "^4.7.0",
+    "gh-pages": "^3.1.0",
     "joi-browser": "^13.4.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3"
   },
+  "homepage": "https://amrahmeda.github.io/RegisterationFrom-JuniorInterviewProcess",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
