@@ -22,6 +22,9 @@ $ npm start
 * [Font-Awesome](https://www.npmjs.com/package/font-awesome) - Full suite of pictographic icons
 * [React-router-Dom](https://www.npmjs.com/package/react-router-dom) - DOM bindings for React Router.
 
+# DB Schema 
+<img src="https://raw.githubusercontent.com/AmrAhmedA/RegisterationFrom-JuniorInterviewProcess/master/src/images/DBSchema.png?token=ALL4CZFCS2ZHSYY5FXS46KK7KAVCY" width="650" height="350"> 
+
 ## Future work 
 - [x] Add login form 
 - [x] Add registration form
