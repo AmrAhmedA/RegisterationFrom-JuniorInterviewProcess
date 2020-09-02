@@ -27,13 +27,14 @@ function App() {
           <Route path="/Research" exact component={Research} />
           <Route path="/Education" exact component={Education} />
           <Route path="/Innovation" exact component={Innovation} />
+          <Route path="/" exact component={RegisterForm} />
           <Route path="/not-found" exact component={NotFound} />
           <Redirect to="/not-found" />
         </Switch>
       </div>
       <Credits />
       {/* {setTimeout(
-        console.log.bind(console, "%c#Amr Gewaly 🔥🔥😄🔥🔥 ", warningTitleCSS),
+        console.log.bind(console, "%c#Amr Ahmed", warningTitleCSS),
         0
       )} */}
     </div>

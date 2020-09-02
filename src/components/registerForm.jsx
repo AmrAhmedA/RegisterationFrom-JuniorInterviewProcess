@@ -1,6 +1,7 @@
 import React from "react";
 import Joi from "joi-browser";
 import Form from "../components/form";
+import * as userService from "./services/userService";
 class RegisterForm extends Form {
   state = {
     data: { firstname: "", secondname: "", email: "", phone: "", password: "" },
@@ -14,8 +15,9 @@ class RegisterForm extends Form {
     password: Joi.string().required().min(5).max(30).label("Password"),
   };
 
-  doSubmit = () => {
+  doSubmit = async () => {
     // Call Server
+    await userService.register(this.state.data);
     this.props.history.push("/Login"); // Programmatic Routing
     console.log("Submitted");
   };
