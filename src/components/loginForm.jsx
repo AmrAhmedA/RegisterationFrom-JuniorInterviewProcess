@@ -1,19 +1,32 @@
 import React from "react";
 import Joi from "joi-browser"; // Special library for form vlaidation
 import Form from "../components/form";
+import { login } from "../components/services/authService";
 class LoginForm extends Form {
   // username = React.createRef();
   state = {
-    data: { username: "", password: "" },
+    data: { email: "", password: "" },
     errors: {},
   };
 
   schema = {
-    username: Joi.string().required().label("Username"),
+    email: Joi.string().required().label("Email"),
     password: Joi.string().required().label("Password"),
   };
 
-  doSubmit = () => {
+  doSubmit = async () => {
+    // Call server
+    try {
+      const { data } = this.state;
+      login(data.email, data.password);
+    } catch (ex) {
+      if (ex.response && ex.response.status === 400) {
+        const errors = { ...this.state.errors };
+        errors.email = ex.response.data;
+        this.setState({ errors });
+      }
+    }
+
     console.log("Submitted");
   };
 
@@ -30,7 +43,7 @@ class LoginForm extends Form {
         <div className="row ">
           <div className="col-12 ">
             <form onSubmit={this.handleSubmit}>
-              {this.renderInput("username", "Username")}
+              {this.renderInput("email", "Email")}
               {this.renderInput("password", "Password", "password")}
               {this.renderButton("Login")}
             </form>
