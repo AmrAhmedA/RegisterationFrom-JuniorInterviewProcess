@@ -1,7 +1,14 @@
 import React, { Component } from "react";
 import Logo from "../images/British_University_in_Egypt.png";
+import { Link, useLocation } from "react-router-dom";
 // Dummy NavBar
 class NavBar extends Component {
+  HeaderView() {
+    let location = useLocation();
+    console.log(location.pathname);
+    // return <span>Path : {location.pathname}</span>;
+  }
+
   state = {};
   render() {
     return (
@@ -23,39 +30,39 @@ class NavBar extends Component {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item active">
-              <a className="nav-link" href="/Register">
+              <Link className="nav-link" to="/Register">
                 Home <span className="sr-only">(current)</span>
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/Register">
+              <Link className="nav-link" to="/Education">
                 Education
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/Register">
+              <Link className="nav-link" to="/Research">
                 Research
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/Register">
+              <Link className="nav-link" to="/Innovation">
                 Innovation
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/Login">
+              <Link className="nav-link" to="/Login">
                 Login
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a
+              <Link
                 className="nav-link disabled"
-                href="/Register"
+                to="/Register"
                 tabIndex="-1"
                 aria-disabled="true"
               >
                 Register
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

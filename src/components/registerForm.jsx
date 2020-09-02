@@ -16,6 +16,7 @@ class RegisterForm extends Form {
 
   doSubmit = () => {
     // Call Server
+    this.props.history.push("/Login"); // Programmatic Routing
     console.log("Submitted");
   };
 
