@@ -6,7 +6,7 @@ This project is an attempt to fulfill a junior interview process at the producti
 ```
 $ git clone https://github.com/AmrAhmedA/RegisterationFrom-JuniorInterviewProcess.git
 ``` 
-* run
+* to install dependencies run 
 ``` 
 $ npm install 
 ```
