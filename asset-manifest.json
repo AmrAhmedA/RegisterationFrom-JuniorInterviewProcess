@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/RegisterationFrom-JuniorInterviewProcess/static/css/main.3f8f7047.chunk.css",
+    "main.js": "/RegisterationFrom-JuniorInterviewProcess/static/js/main.8e2402a9.chunk.js",
+    "main.js.map": "/RegisterationFrom-JuniorInterviewProcess/static/js/main.8e2402a9.chunk.js.map",
+    "runtime-main.js": "/RegisterationFrom-JuniorInterviewProcess/static/js/runtime-main.948ee3c5.js",
+    "runtime-main.js.map": "/RegisterationFrom-JuniorInterviewProcess/static/js/runtime-main.948ee3c5.js.map",
+    "static/css/2.a9e8dada.chunk.css": "/RegisterationFrom-JuniorInterviewProcess/static/css/2.a9e8dada.chunk.css",
+    "static/js/2.933a6ca1.chunk.js": "/RegisterationFrom-JuniorInterviewProcess/static/js/2.933a6ca1.chunk.js",
+    "static/js/2.933a6ca1.chunk.js.map": "/RegisterationFrom-JuniorInterviewProcess/static/js/2.933a6ca1.chunk.js.map",
+    "index.html": "/RegisterationFrom-JuniorInterviewProcess/index.html",
+    "precache-manifest.784ee544b79e6d695766845632f42c01.js": "/RegisterationFrom-JuniorInterviewProcess/precache-manifest.784ee544b79e6d695766845632f42c01.js",
+    "service-worker.js": "/RegisterationFrom-JuniorInterviewProcess/service-worker.js",
+    "static/css/2.a9e8dada.chunk.css.map": "/RegisterationFrom-JuniorInterviewProcess/static/css/2.a9e8dada.chunk.css.map",
+    "static/css/main.3f8f7047.chunk.css.map": "/RegisterationFrom-JuniorInterviewProcess/static/css/main.3f8f7047.chunk.css.map",
+    "static/js/2.933a6ca1.chunk.js.LICENSE.txt": "/RegisterationFrom-JuniorInterviewProcess/static/js/2.933a6ca1.chunk.js.LICENSE.txt",
+    "static/media/BUELogo.png": "/RegisterationFrom-JuniorInterviewProcess/static/media/BUELogo.7e8c317e.png",
+    "static/media/British_University_in_Egypt.png": "/RegisterationFrom-JuniorInterviewProcess/static/media/British_University_in_Egypt.a774125a.png",
+    "static/media/font-awesome.css": "/RegisterationFrom-JuniorInterviewProcess/static/media/fontawesome-webfont.fee66e71.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.948ee3c5.js",
+    "static/css/2.a9e8dada.chunk.css",
+    "static/js/2.933a6ca1.chunk.js",
+    "static/css/main.3f8f7047.chunk.css",
+    "static/js/main.8e2402a9.chunk.js"
+  ]
+}
